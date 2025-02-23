@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-.container{
+.container1{
     display: flex;
     gap: 20px;
     align-items: center;
@@ -10,13 +10,13 @@
     margin-bottom: 10px;
     padding: 10px;
 }
-.container .cont2 .card-body h3{
+.container1 .cont2 .card-body h3{
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
     text-transform: capitalize;
 }
-.container .cont2 .card-body p{
+.container1 .cont2 .card-body p{
     font-size: 8px;
     padding: 10px;
 }
@@ -36,8 +36,7 @@
 
 }
 #about {
-    background-color: #01241e;
-    color: white;
+    background: linear-gradient(#0dcdad,#01241e);      color: white;
     padding: 20px;
 }
 #about button{
@@ -53,7 +52,12 @@
    background-color: #810f0f2a;
    text-align: center;
    color: white;
+   transition: background-color 0.3s ease;
+   text-align: center;
+}
 
+.cont2:hover {
+   background-color: orange;
 }
 #contact{
   display: flex;
@@ -103,7 +107,7 @@
 }
 
 #ourservices{
-height: 100vh;
+height: auto;
 padding-bottom: 100px;
 background-color: #21d2b5;
 }
@@ -119,6 +123,7 @@ height: 100vh;
 text-align: center;
 font-size: 60px;
 font-weight: bolder;
+border-bottom: 2px solid red;
 }
 .right .p{
 text-align: center;
@@ -145,17 +150,88 @@ footer{
 .bottom{
     text-align: center;
 }
+#home{
+    height: 100vh;
+    background: linear-gradient(#0dcdad,#01241e);   
+justify-content: center;
+align-items: center;
+text-align: center;
+display: flex;
+}
+.div{
+    border: white 2px solid;
+    justify-content: center;
+    justify-items: center;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+.div h1{
+   text-transform: uppercase;
+   letter-spacing: 20px;
+    color: white;
+}
+.btn a{
+   text-decoration: none;
+   text-transform: capitalize;
+   color: white;
+}
+.div .Treasure{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+   border-radius: 50px;
+   width: 150px;
+}
+.service-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+#our-services{
+    background: linear-gradient(#0dcdad,#01241e);  
+}
+
+.service-container:hover {
+    background-color: orange;
+}
+
+.service-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+}
+
 
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
-    .container {
+    .container1 {
         flex-direction: column;
         gap: 10px;
     }
-    .container .cont2 .card-body h3 {
+    #container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container1 .cont2 .card-body h3 {
         font-size: 16px;
     }
-    .container .cont2 .card-body p {
+    .container1 .cont2 .card-body p {
         font-size: 10px;
     }
     .card {
@@ -182,6 +258,12 @@ footer{
     }
     .right h2 {
         font-size: 40px;
+    }
+    .right {
+        padding: 20px;
+    }
+   .form-control {
+    width: 100%;
     }
     .right .p, .right p {
         font-size: 18px;
