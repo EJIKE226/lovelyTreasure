@@ -65,7 +65,6 @@
   justify-content: center;
   text-align: center;
     height: 100vh;
-    background-color: #21d2b5;
 }
 .con{
    width: 30%;
@@ -193,9 +192,7 @@ display: flex;
     transition: background-color 0.3s ease;
     text-align: center;
 }
-#our-services{
-    background: linear-gradient(#0dcdad,#01241e);  
-}
+
 
 .service-container:hover {
     background-color: orange;
