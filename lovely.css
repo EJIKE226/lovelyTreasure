@@ -29,7 +29,8 @@
     height: 70vh;
     box-shadow: 4px 4px 15px white;
     margin: 12px;
-    color: black;
+    color: white;
+    background-color: transparent;
 }
 #about h1{
     text-align: center;
